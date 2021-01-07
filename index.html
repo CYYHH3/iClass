@@ -1,0 +1,701 @@
+
+<!-- saved from url=(0034)https://portal.iclass.hk/index.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+	<link rel="apple-touch-icon-precomposed" href="./index_files/iclass_logo_square.png">
+	<link rel="icon" href="./index_files/iclass_logo_square.png" type="image/png" sizes="318x318">
+	
+	<meta property="og:description" content="iClass is an real-time interactive teaching and learning platform on cloud, it focuses in enhancing the interactiveness in the classroom. This system consists of “Teacher Platform” (HTML5 version) and “Student Platform” (iOS version + HTML5 version). iClass致力於為日常課堂提供一個便捷、易用、高效的互動平台。 該系統有助於改革評估方法、發展資訊科技在課程中的作用、提升學生在課程改革和創新中的學習體驗。">
+	<meta name="description" content="iClass is an real-time interactive teaching and learning platform on cloud, it focuses in enhancing the interactiveness in the classroom. This system consists of “Teacher Platform” (HTML5 version) and “Student Platform” (iOS version + HTML5 version). iClass致力於為日常課堂提供一個便捷、易用、高效的互動平台。 該系統有助於改革評估方法、發展資訊科技在課程中的作用、提升學生在課程改革和創新中的學習體驗。">
+	<meta name="application-name" content="iClass">
+	<meta http-equiv="cleartype" content="on">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"><script type="text/javascript" src="./index_files/f9e88ae3a1"></script><script src="./index_files/nr-1184.min.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"f9e88ae3a1",applicationID:"487787175"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, user-scaleble=yes, initial-scale=1, maximum-scale=1.0">
+	<meta property="og:title" content="iClass - Interactive Class on Cloud">
+	<meta property="og:site_name" content="iClass - Interactive Class on Cloud">
+	<title>iClass - Interactive Class on Cloud</title><script src="./index_files/jquery-1.8.2.min.js"></script>
+        <link rel="shortcut icon" type="image/png" href="http://portal.iclass.hk/iclass/images/iclass_logo_square.png">
+        <meta name="apple-itunes-app" content="app-id=556787469"> <!-- iOS downloadapp -->
+		<meta name="google-signin-client_id" content="41633942151-lc4nt9mmr2lb0r2lfr397k8gldeenl13.apps.googleusercontent.com">
+        <link rel="stylesheet" href="./index_files/dock.css">
+        <link rel="stylesheet" href="./index_files/login.css">
+        <script src="./index_files/transit.js"></script>
+		    <script src="./index_files/is.min.js"></script>
+        <script type="text/javascript">
+			// TOSTR LIBRARY FOR SINGLE PAGE USAGE
+			var is_etextbook = false
+            !function (e) {
+                e(["jquery"], function (e) {
+                    return function () {
+                        function t(e, t, n) {
+                            return g({type: O.error, iconClass: m().iconClasses.error, message: e, optionsOverride: n, title: t})
+                        }
+                        function n(t, n) {
+                            return t || (t = m()), v = e("#" + t.containerId), v.length ? v : (n && (v = u(t)), v)
+                        }
+                        function i(e, t, n) {
+                            return g({type: O.info, iconClass: m().iconClasses.info, message: e, optionsOverride: n, title: t})}
+                        function o(e) {
+                            w = e
+                        }
+                        function s(e, t, n) {
+                            return g({type: O.success, iconClass: m().iconClasses.success, message: e, optionsOverride: n, title: t})
+                        }
+                        function a(e, t, n) {
+                            return g({type: O.warning, iconClass: m().iconClasses.warning, message: e, optionsOverride: n, title: t})
+                        }
+                        function r(e, t) {
+                            var i = m();
+                            v || n(i), l(e, i, t) || d(i)
+                        }
+                        function c(t) {
+                            var i = m();
+                            return v || n(i), t && 0 === e(":focus", t).length ? void h(t) : void(v.children().length && v.remove())
+                        }
+                        function d(t) {
+                            for (var n = v.children(), i = n.length - 1; i >= 0; i--)
+                                l(e(n[i]), t)
+                        }
+                        function l(t, n, i) {
+                            var o = i && i.force ? i.force : !1;
+                            return t && (o || 0 === e(":focus", t).length) ? (t[n.hideMethod]({duration: n.hideDuration, easing: n.hideEasing, complete: function () {
+                                    h(t)
+                                }}), !0) : !1
+                        }
+                        function u(t) {
+                            return v = e("<div/>").attr("id", t.containerId).addClass(t.positionClass).attr("aria-live", "polite").attr("role", "alert"), v.appendTo(e(t.target)), v
+                        }
+                        function p() {
+                            return{tapToDismiss: !0, toastClass: "toast", containerId: "toast-container", debug: !1, showMethod: "fadeIn", showDuration: 300, showEasing: "swing", onShown: void 0, hideMethod: "fadeOut", hideDuration: 1e3, hideEasing: "swing", onHidden: void 0, closeMethod: !1, closeDuration: !1, closeEasing: !1, extendedTimeOut: 1e3, iconClasses: {error: "toast-error", info: "toast-info", success: "toast-success", warning: "toast-warning"}, iconClass: "toast-info", positionClass: "toast-top-right", timeOut: 5e3, titleClass: "toast-title", messageClass: "toast-message", escapeHtml: !1, target: "body", closeHtml: '<button type="button">&times;</button>', newestOnTop: !0, preventDuplicates: !1, progressBar: !1}
+                        }
+                        function f(e) {
+                            w && w(e)
+                        }
+                        function g(t) {
+                            function i(e) {
+                                return null == e && (e = ""), new String(e).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/'/g, "&#39;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+                            }
+                            function o() {
+                                r(), d(), l(), u(), p(), c()
+                            }
+                            function s() {
+                                y.hover(b, O), !x.onclick && x.tapToDismiss && y.click(w), x.closeButton && k && k.click(function (e) {
+                                    e.stopPropagation ? e.stopPropagation() : void 0 !== e.cancelBubble && e.cancelBubble !== !0 && (e.cancelBubble = !0), w(!0)
+                                }), x.onclick && y.click(function (e) {
+                                    x.onclick(e), w()
+                                })
+                            }
+                            function a() {
+                                y.hide(), y[x.showMethod]({duration: x.showDuration, easing: x.showEasing, complete: x.onShown}), x.timeOut > 0 && (H = setTimeout(w, x.timeOut), q.maxHideTime = parseFloat(x.timeOut), q.hideEta = (new Date).getTime() + q.maxHideTime, x.progressBar && (q.intervalId = setInterval(D, 10)))
+                            }
+                            function r() {
+                                t.iconClass && y.addClass(x.toastClass).addClass(E)
+                            }
+                            function c() {
+                                x.newestOnTop ? v.prepend(y) : v.append(y)
+                            }
+                            function d() {
+                                t.title && (I.append(x.escapeHtml ? i(t.title) : t.title).addClass(x.titleClass), y.append(I))
+                            }
+                            function l() {
+                                t.message && (M.append(x.escapeHtml ? i(t.message) : t.message).addClass(x.messageClass), y.append(M))
+                            }
+                            function u() {
+                                x.closeButton && (k.addClass("toast-close-button").attr("role", "button"), y.prepend(k))
+                            }
+                            function p() {
+                                x.progressBar && (B.addClass("toast-progress"), y.prepend(B))
+                            }
+                            function g(e, t) {
+                                if (e.preventDuplicates) {
+                                    if (t.message === C)
+                                        return!0;
+                                    C = t.message
+                                }
+                                return!1
+                            }
+                            function w(t) {
+                                var n = t && x.closeMethod !== !1 ? x.closeMethod : x.hideMethod, i = t && x.closeDuration !== !1 ? x.closeDuration : x.hideDuration, o = t && x.closeEasing !== !1 ? x.closeEasing : x.hideEasing;
+                                return!e(":focus", y).length || t ? (clearTimeout(q.intervalId), y[n]({duration: i, easing: o, complete: function () {
+                                        h(y), x.onHidden && "hidden" !== j.state && x.onHidden(), j.state = "hidden", j.endTime = new Date, f(j)
+                                    }})) : void 0
+                            }
+                            function O() {
+                                (x.timeOut > 0 || x.extendedTimeOut > 0) && (H = setTimeout(w, x.extendedTimeOut), q.maxHideTime = parseFloat(x.extendedTimeOut), q.hideEta = (new Date).getTime() + q.maxHideTime)
+                            }
+                            function b() {
+                                clearTimeout(H), q.hideEta = 0, y.stop(!0, !0)[x.showMethod]({duration: x.showDuration, easing: x.showEasing})
+                            }
+                            function D() {
+                                var e = (q.hideEta - (new Date).getTime()) / q.maxHideTime * 100;
+                                B.width(e + "%")
+                            }
+                            var x = m(), E = t.iconClass || x.iconClass;
+                            if ("undefined" != typeof t.optionsOverride && (x = e.extend(x, t.optionsOverride), E = t.optionsOverride.iconClass || E), !g(x, t)) {
+                                T++, v = n(x, !0);
+                                var H = null, y = e("<div/>"), I = e("<div/>"), M = e("<div/>"), B = e("<div/>"), k = e(x.closeHtml), q = {intervalId: null, hideEta: null, maxHideTime: null}, j = {toastId: T, state: "visible", startTime: new Date, options: x, map: t};
+                                return o(), a(), s(), f(j), x.debug && console && console.log(j), y
+                            }
+                        }
+                        function m() {
+                            return e.extend({}, p(), b.options)
+                        }
+                        function h(e) {
+                            v || (v = n()), e.is(":visible") || (e.remove(), e = null, 0 === v.children().length && (v.remove(), C = void 0))
+                        }
+                        var v, w, C, T = 0, O = {error: "error", info: "info", success: "success", warning: "warning"}, b = {clear: r, remove: c, error: t, getContainer: n, info: i, options: {}, subscribe: o, success: s, version: "2.1.2", warning: a};
+                        return b
+                    }()
+                })
+            }("function" == typeof define && define.amd ? define : function (e, t) {
+                "undefined" != typeof module && module.exports ? module.exports = t(require("jquery")) : window.toastr = t(window.jQuery)
+            });
+			var lang_toggle = false;
+			var displayLanguage = 1;
+            var bookshelf_first = 0;
+			function login_button_clicked(){
+        $("#login-submit-loader").css("display","block");$("#loginSubmitButton").css("display","none");
+				if (check()) {
+					success();
+				} else {
+					shake();
+          setTimeout(function() {
+            $("#login-submit-loader").css("display","none");$("#loginSubmitButton").css("display","block");
+          },2500);
+				}
+			}
+            function getCookie(cname) {
+                var name = cname + "=";
+                var ca = document.cookie.split(',');
+                for (var i = 0; i < ca.length; i++)
+                {
+                    var c = ca[i].trim();
+                    if (c.indexOf(name) == 0)
+                        return c.substring(name.length, c.length);
+                }
+                return "";
+            }
+            function setCookie(cname, cvalue, exdays) {
+                console.log(cname, cvalue, exdays);
+                var d = new Date();
+                d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+                var expires = "expires=" + d.toGMTString();
+                document.cookie = cname + "=" + cvalue + ", " + expires + " ";
+            }
+            function login() {
+                if (check()) {
+                    success();
+                } else {
+                    shake();
+                }
+            }
+            function shake() {
+                $('#login').addClass('vi');
+                $('#submitArea').animate({opacity: 0.7}, 500);
+                // $('#incorrect').fadeIn();
+            }
+            function shakeReset() {
+                $('#login').removeClass('vi');
+                $('#submitArea').animate({opacity: 1}, 500);
+                // $('#incorrect').fadeOut();
+            }
+            function check() {
+                if (($('#loginName').val().length === 0) || ($('#loginPassword').val().length === 0)) {
+                    notify('error', 'Please complete all fields');
+                    $("#page-logo").transition({x: '15px'}).transition({x: '-15px'}).transition({x: '0'});
+                    ;
+                    return 0;
+                } else {
+                    return 1;
+                }
+            }
+
+			function do_register(member_id){
+				$(document).ready(function(){
+					var result = prompt('You are suggested to register your account','XXXX-XXXX-XXXX-XXXX');
+					$.post('https://portal.iclass.hk/bookshelf/api/do_school_based_itb_redeem.php',{member_id:member_id,sn:result},function(response){
+						if(response.errno == '0'){
+							alert('redeem success!');
+							console.log(response);
+						}else
+							alert('redeem code incorrect, you might try again later');
+						if (bookshelf_first == 1 || is_etextbook){
+							location.href = "bookshelf/";
+						}else
+							location.href = "profile/";
+					});
+				});
+			}
+            function success() {
+                $('#formBackground').addClass('vi2');
+
+
+                $.post("api/login_portal.php", {
+                    schoolid: $("#sid").data("schoolid"),
+                    loginName: $('#loginName').val(),
+                    loginPassword: $('#loginPassword').val(),
+                    loginLanguage: displayLanguage,
+                    loginDeviceID: 3,
+                    offset: Math.floor(+new Date() / 1000)
+                }, function (r) {
+
+                    if (r.status == "success") {
+                        $('#loginForm').fadeOut();
+                        $('#panels').fadeOut();
+                        $('#login').fadeOut();
+						if(r.remark == 'RCS'){
+							var result = prompt('You are suggested to register your account','XXXX-XXXX-XXXX-XXXX');
+							$.post('https://portal.iclass.hk/bookshelf/api/do_school_based_itb_redeem.php',{member_id:r.member_id,sn:result},function(response){
+								if(response.errno == '0'){
+									console.log(response);
+									alert('redeem success!');
+                                }
+								if (bookshelf_first == 1 || is_etextbook){
+                                    location.href = "bookshelf/";
+                                }else
+                                    location.href = "profile/";
+							});
+						} else if (r.remark == "student" || r.remark == "teacher") {
+                            $('body').delay(500, function () {
+                                if (bookshelf_first == 1 || is_etextbook){
+                                    location.href = "bookshelf/";
+                                }else
+                                    location.href = "profile/";
+                            });
+                        } else if (r.remark == "event") {
+                            $('body').delay(500, function () {
+                                location.href = "course/index.php?courseid="+r.courseid;
+                                // console.log(r.remark);
+                                // alert(r.remark);
+                            });
+                        }
+                    } else if (r.status == "fail") {
+                        if (r.remark == "incorrect" || r.remark == "empty" || r.remark == "expired") {
+                            shake();
+                            // notify('error',r.msg);
+                            if (r.remark == "empty") {
+                                notify('error', 'Please complete all fields');
+                            } else if (r.remark == "incorrect") {
+                                notify('error', 'Incorrect username or password');
+                            } else {
+                                notify('error', 'Incorrect username or password');
+                            }
+                            $("#page-logo").transition({x: '15px'}).transition({x: '-15px'}).transition({x: '0'});
+
+                            setTimeout(function() {
+                              $("#login-submit-loader").css("display","none");$("#loginSubmitButton").css("display","block");
+                            },2500);
+
+                            return false;  //Not post successfully
+                        }
+                    } else if (r.status == "error" && r.remark == "redirect") {
+                        $('#loginForm').fadeOut();
+                        $('#panels').fadeOut();
+                        $('#login').fadeOut();
+                        $('body').delay(800).delay(50, function () {
+                            window.location.href = "apis/login_redirect.php";
+                        })
+
+                    }
+
+                }, "json");
+            }
+            function fIn() {
+                // $('body').fadeIn(1000);
+                // $("#notice-board-wrapper").animate({"top": "0px"}, 1500);
+                setTimeout(function () {
+                    // $("#iClassLogo").transition({perspective: '100px', rotateY: '180deg'});
+                    // setTimeout(function () {
+                    //     $("#web-logo").fadeIn(1000);
+                    // }, 200);
+                }, 300);
+            }
+            function logo_click_listener() {
+                $("#web-logo").on("click", function () {
+                    location.reload();
+                });
+            }
+            // function resize_listener() {
+            //     $(window).resize(function () {
+            //         if ($(window).height() < 530)
+            //         {
+            //             $('#panels').fadeOut();
+            //         } //login
+            //         if ($(window).height() >= 530)
+            //         {
+            //             $('#panels').fadeIn();
+            //         }
+            //         if ($(window).width() < 1100)
+            //         {
+            //             $('.index-component').fadeOut();
+            //         } //login
+            //         if ($(window).width() >= 1100)
+            //         {
+            //             $('.index-component').fadeIn();
+            //         }
+            //         do_resize_or_redirect();
+            //     });
+            // }
+            // function do_resize_or_redirect() {
+            //     if ($(window).height() >= $(window).width())
+            //     {
+            //         var h = 1;
+            //     }
+            //     if ($(window).height() <= $(window).width())
+            //     {
+            //         var w = 1;
+            //     }
+            //     if ($(window).height() < 500)
+            //     {
+            //         window.location.href = "m/";
+            //     }
+            //     if ($(window).width() < 500)
+            //     {
+            //         window.location.href = "m/";
+            //     }
+            // }
+            function login_form_enter_listener() {
+                document.onkeydown = function (event) {
+                    var key = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
+                    if (key == 13) {
+                        login();
+                    }
+                }
+            }
+            function shake_logo() {
+                $("#page-logo").transition({perspective: '100px', rotateY: '+=180deg'});
+            }
+            function notify(mode, text) {
+                toastr.options = {
+                    "closeButton": false,
+                    "debug": false,
+                    "newestOnTop": false,
+                    "progressBar": false,
+                    "positionClass": "toast-top-full-width",
+                    "preventDuplicates": false,
+                    "onclick": null,
+                    "showDuration": "300",
+                    "hideDuration": "1000",
+                    "timeOut": "5000",
+                    "extendedTimeOut": "100000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                }
+                toastr[mode](text);
+            }
+			function show_gmail_not_found(){
+				notify('error', 'Gmail account not found');
+			}
+			function show_o365_not_found(){
+				notify('error', 'Office 365 account not found');
+			}
+			function update_profile(username) {
+                var username = $("#loginName").val();
+                var password = $("#loginPassword").val();
+                $.post("../apis/login_precheck.php", {"username": username, "password": password}, function (r) {
+                    if (r.status == "success") {
+                        path = r.path;
+                        logo = r.logo;
+                        background = r.background;
+                        type = r.type;
+                        admin = r.admin;
+                        // $("#page-logo").transition({perspective: '100px', rotateY: '+=180deg', delay: '250'});
+                        setTimeout(function () {
+                            $("#page-logo").attr("src", "../images/profile/" + path).css("border", "1px #CCC solid");
+                        }, 250);
+                        $(".company_icon").transition({perspective: '100px', rotateY: '+=180deg', delay: '250'});
+                        setTimeout(function () {
+                            $(".company_icon").attr("src", "../images/school_logo/tn_" + logo);
+                        }, 250);
+                        if (background) {
+                            $(".Center-Container").css("background", "url('../images/school_bg/1024_" + background + "') repeat-y").css("background-size", "110%").css("background-position", "50% 30px");
+                        } else {
+                            var number = Math.floor(Math.random() * 10);
+                            if (number >= 8)  {
+                              // $(".Center-Container").css("background", "url('../images/school_bg/iclass_edu4.jpg') repeat-y").css("background-size", "110%").css("background-position", "50% 30px");
+                              $(".Center-Container").css("background", "url('../images/school_bg/1024_hku.jpg') repeat-y").css("background-size", "110%").css("background-position", "50% 30px");
+                            } else {
+                              $(".Center-Container").css("background", "url('')").css("background", "#EEE");
+                            }
+                        }
+                        if (type == 2) {
+                            $(".login-member-type").css("background", "#2ecc71").text("Student");
+                        } else if (type == 1) {
+                            if (admin == 1) {
+                                $(".login-member-type").css("background", "#9b59b6").text("Admin");
+                            } else {
+                                $(".login-member-type").css("background", "#3498db").text("Teacher");
+                            }
+                        } else {
+                            $(".login-member-type").css("background", "#EEE").text("");
+                        }
+                    } else {
+                        reset_profile();
+                    }
+                }, "json");
+            }
+            function reset_profile() {
+                // $("#page-logo").transition({perspective: '100px', rotateY: '+=180deg', delay: '250'});
+                setTimeout(function () {
+                    $("#page-logo").attr("src", "images/iclass_logo_square.png").css("border", "1px #fff solid");
+                }, 250);
+                $(".company_icon").transition({perspective: '100px', rotateY: '+=180deg', delay: '250'});
+                setTimeout(function () {
+                    $(".company_icon").attr("src", "images/itwake_t.png");
+                }, 250);
+                $(".Center-Container").css("background", "url('')");
+                $(".login-member-type").css("background", "white").text("");
+            }
+			function update_username_listener(){
+                $(".Center-Block").delegate("#loginName", "blur", function () {
+                    $("#loginName").one("blur", function () {
+                        if ($(this).val().length === 0) {
+                            reset_profile();
+                        } else {
+                            update_profile();
+                        }
+                    });
+                });
+			}
+			function news_button_listener(){
+                //news control
+                $(".news-icon").on("click", function () {
+                    //  console.log(1);
+                    var status = $(".news-icon").data("status");
+                    if (status == "in" || status == undefined || status == "") {
+                        // console.log(2);
+                        $(".News-Block").transition({"x": 2500}).fadeIn();
+                        $(".Center-Block").transition({"x": -2500});
+                        $(".News-Block").transition({"x": 0});
+                        $(".news-icon").data("status", "out");
+                    } else if (status == "out") {
+                        // console.log(3);
+                        $(".News-Block").transition({"x": 2500}).fadeOut(200, function () {
+                            $(".Center-Block").transition({"x": 0});  });
+                        $(".news-icon").data("status", "in");
+                    }
+                });
+			}
+			function set_lang(val){
+				if(Storage){
+					console.log(val);
+					if(val == '0')
+						localStorage.setItem('displayLanguage','0');
+					else if(val == '1')
+						localStorage.setItem('displayLanguage','1');
+					else if(val == '2')
+						localStorage.setItem('displayLanguage','2');
+					$.post('api/set_login_language.php', {language: val}, function (response) {
+						setTimeout(function () {
+							window.location.reload();
+						}, 500);
+					});
+				} else {
+					notify('warning','Please use Google Chrome for better user experience');
+				}
+			}
+			function get_lang(){
+				return '1';
+			}
+			function get_local_lang(){
+				if(Storage){
+					if(is.null(localStorage.getItem("displayLanguage")))
+						localStorage.setItem('displayLanguage','1');
+					return localStorage.getItem("displayLanguage");
+				}else
+					return false;
+			}
+			function toggle_lang(){
+				if(!lang_toggle){
+					$(".dropdown-content").fadeIn();
+					$(".dropbtn").css('background-color','#EEEEEE');
+					lang_toggle=true;
+				} else {
+
+					$(".dropdown-content").fadeOut();
+					$(".dropbtn").css('background-color','##F1F1F1');
+					lang_toggle=false;
+				}
+			}
+			$(document).ready(function () {
+
+				if(get_local_lang() != get_lang()){
+					set_lang(get_local_lang());
+				}
+
+                // resize_listener();
+                // do_resize_or_redirect();
+                // language_handler();
+				fIn();
+                logo_click_listener();
+                login_form_enter_listener();
+				update_username_listener();
+				news_button_listener();
+												            });
+        </script>
+	</head>
+    <body>
+        <div class="header">
+            <div id="web-logo">
+                <img src="./index_files/itwake_t.png" class="company_icon">
+                <div class="title">iClass LMS</div>
+            </div>
+            <div class="dropdown" style="float:right">
+                <button class="dropbtn" onclick="toggle_lang()">
+                    <span>
+						<img src="./index_files/hk_flag.jpg">&nbsp;&nbsp;繁體中文					</span>
+                </button>
+                <div class="dropdown-content">
+                                        <a href="javascript:void(0)" onclick="set_lang(0)">
+                        <img src="./index_files/us_flag.jpg">&nbsp;&nbsp;English</a>
+                                        <a href="javascript:void(0)" onclick="set_lang(1)">
+                        <img src="./index_files/hk_flag.jpg">&nbsp;&nbsp;繁體中文</a>
+                                        <a href="javascript:void(0)" onclick="set_lang(2)">
+                        <img src="./index_files/cn_flag.jpg">&nbsp;&nbsp;简体中文</a>
+                                    </div>
+            </div>
+        </div>
+        <div class="footer" style="display: flex">
+            <a href="https://portal.iclass.hk/doc/about_us.php" target="_new">
+                <img src="./index_files/login_info.png" class="info_icon">
+            </a>
+            <a href="https://docs.google.com/spreadsheet/viewform?formkey=dFNWT0x2SFIzOEN2Z2pfUVpmd0Rud0E6MQ" target="_new">
+                <img src="./index_files/iclass_contact.png" style="height: 30px;padding: 10px;">
+            </a>
+            <a href="https://www.iclass.hk/doc/iClassHKAFPrivacyStatement_v201809.pdf" target="_new" style="height: 50px;color:#FFF;display:flex;justify-content: center;align-items: center;">
+                <span style="padding: 0 15px">Privacy Statement</span>
+            </a>
+            <div style="float: right;margin-right: 15px;cursor:pointer;margin-left: auto;">
+                <img src="./index_files/tn_news.png" style="height: 36px;padding:7px;" class="news-icon" data-status="">
+            </div>
+
+			        </div>
+                <div class="Center-Container is-Table" style="background: url(&quot;../images/school_bg/1024_hku.jpg&quot;) 50% 30px / 110% repeat-y;&quot;">
+    <div class="Table-Cell">
+        <div class="News-Block">
+            <center style="width:100%;border-bottom: 2px #09C solid;line-height:35px;">
+                <div class="news-cross" style="float:left;cursor:pointer;" onclick=" $(&quot;.news-icon&quot;).click();">
+					<img src="./index_files/cross.png" style="height: 32px;padding: 2px;">
+				</div>
+                <span style="margin-left:-50px;font-size: 18px;font-weight: 400;color: #555;">
+					News				</span>
+            </center>
+            <table class="news_table">
+                <tbody><tr class="row">
+                    <td class="date">1708-20</td>
+                    <td class="content">New Login Interface - public testing (supports Google and Office365 Login)</td>
+                </tr>
+                <tr class="row">
+                    <td class="date">1708-20</td>
+                    <td class="content">LMS Course Export Answer is upgraded and renamed to Generate Report</td>
+                </tr>
+                <tr class="row">
+                    <td class="date">1708-17</td>
+                    <td class="content">MDM Automation - upgraded</td>
+                </tr>
+                <tr class="row">
+                    <td class="date">1708-17</td>
+                    <td class="content">MDM Self-service Center - new function</td>
+                </tr>
+                <tr class="row">
+                    <td class="date">1708-17</td>
+                    <td class="content">MDM Parental Control App iOS v1.03 is on Apple App Store now</td>
+                </tr>
+                <tr class="row">
+                    <td class="date">1708-08</td>
+                    <td class="content">LMS iOS v1.7.27 is on Apple App Store now</td>
+                </tr>
+                <tr class="row">
+                    <td class="date"></td>
+                    <td class="content"></td>
+                </tr>
+                <tr class="row">
+                    <td class="date"></td>
+                    <td class="content"></td>
+                </tr>
+                <tr class="row">
+                    <td class="date"></td>
+                    <td class="content"></td>
+                </tr>
+                <tr class="row">
+                    <td class="date"></td>
+                    <td class="content"></td>
+                </tr>
+                <tr class="row">
+                    <td class="date"></td>
+                    <td class="content"></td>
+                </tr>
+                <tr class="row">
+                    <td class="date"></td>
+                    <td class="content"></td>
+                </tr>
+                <tr class="row">
+                    <td class="date"></td>
+                    <td class="content"></td>
+                </tr>
+                <tr class="row">
+                    <td class="date"></td>
+                    <td class="content"></td>
+                </tr>
+                <tr class="row">
+                    <td class="date"></td>
+                    <td class="content"></td>
+                </tr>
+                <tr class="row">
+                    <td class="date"></td>
+                    <td class="content"></td>
+                </tr>
+                <tr class="row">
+                    <td class="date"></td>
+                    <td class="content"></td>
+                </tr>
+                <tr class="row">
+                    <td class="date"></td>
+                    <td class="content"></td>
+                </tr>
+            </tbody></table>
+        </div>
+        <div class="Center-Block">
+            <div id="form_background"></div>
+            <center class="login-member-type"></center>
+            <div style="position:relative;">
+                <img id="page-logo" src="./index_files/iclass_logo_square.png" onclick="shake_logo()">
+                <input type="hidden" id="sid" data-schoolid="-1">
+                <input onfocus="shakeReset()" name="loginName" id="loginName" placeholder="使用者">
+                <input onfocus="shakeReset()" name="loginPassword" id="loginPassword" type="password" placeholder="密碼">
+                <br>
+				<br>
+                <div id="guest_login_btn" style="display:none;">Guest</div>
+                <center>
+                  <div id="loginSubmitButton" onclick="login_button_clicked()">登入</div>
+                  <div id="login-submit-loader" style="display:none;"><img src="./index_files/preloader_white.gif" style="height: 45px;"></div>
+                </center>
+                <table id="login_description">
+                    <tbody><tr class="row">
+                        <td>
+							<hr>
+						</td>
+                        <td style="width:40%;text-align:center;color:#666666;min-width:150px;">或使用</td>
+                        <td>
+							<hr>
+						</td>
+                    </tr>
+                </tbody></table>
+                <div class="sso_link">
+										<img src="./index_files/google.png" onclick="window.location.href = &#39;https://accounts.google.com/o/oauth2/auth?response_type=code&amp;redirect_uri=https%3A%2F%2Fportal.iclass.hk%2Fapi%2Foauth_login.php&amp;client_id=410935451415-bo12h91f3p2ge54efmgr7si75p3bvnhu.apps.googleusercontent.com&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&amp;access_type=offline&amp;approval_prompt=force&#39;" class="google_link">
+					
+										                    <img src="./index_files/office365.png" onclick="window.location.href = &quot;https://portal.iclass.hk/sso/o365/oauth2.php&quot;" class="m365_link">
+                </div>
+            </div>
+            <br>
+			<br>
+        </div>
+    </div>
+</div>
+        <script id="login-title" type="text/x-translation">Notice from developers</script><script id="login-emailcontact" type="text/x-translation">Email Contact</script>		<script src="./index_files/platform.js" async="" defer="" gapi_processed="true"></script>
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"f9e88ae3a1","applicationID":"487787175","transactionName":"YANbMBcFWEAHVRULWFlJbBYMS19dAlMZTEdfFg==","queueTime":0,"applicationTime":18,"atts":"TERYRl8fS04=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+</body></html>
